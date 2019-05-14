@@ -6,6 +6,8 @@ This project is implemented in MATLAB. The MIRtoolbox must be installed in order
 The project consists of 2 tasks. The first is to classify an audio track as music or speech.
 The second is to divide a mixed audio file (both music and speech) to the music segments and the speech segments.
 
+The 2 projects are based on MIREX annual competiton.
+
 The first task uses a cubic svm trained model. The below features were used for classifying:
 RMS energy
 Zero-crossing-rate
@@ -46,4 +48,9 @@ test2mono.wav: an audio test file
 
 wavscript.sh: shell script to convert audio files in 22050 Hz mono. Copy it in a directory with wav files and run it as . ./wavscript.sh to get the copyfiles in the desired form (Ubuntu terminal)
 
-For questions contact me at orestisapostolou@yahoo.gr
+You can easily use your own dataset and observe differences in performance, by using inputPrep_v7_5.m, in order to prepare the data properly.
+
+Feel free to clone, download or use this project for your research, or contribute for something that you would like to add.
+
+
+For any questions contact me at orestisapostolou@yahoo.gr
